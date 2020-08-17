@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "ingress-healthz.fullname" . }}-test-connection"
+  labels:
+    {{- include "ingress-healthz.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+    "helm.sh/hook-delete-policy": hook-succeeded
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "ingress-healthz.fullname" . }}:{{ .Values.service.port }}/healthz']
+  restartPolicy: Never
