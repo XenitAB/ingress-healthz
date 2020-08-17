@@ -1,3 +1,3 @@
-module github.com/simongottschlag/ingress-healthz
+module github.com/xenitab/ingress-healthz
 
-go 1.13
+go 1.14
