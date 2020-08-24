@@ -1,6 +1,9 @@
 TAG = dev
 IMG ?= quay.io/xenitab/ingress-healthz:$(TAG)
 
+lint:
+	golangci-lint run -E misspell
+
 fmt:
 	go fmt ./...
 

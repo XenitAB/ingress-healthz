@@ -38,7 +38,9 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	log.Println(string(jsonResponse))
 
 	w.Header().Set("Content-Type", "application/json")
-	w.Write(jsonResponse)
+	if _, err := w.Write(jsonResponse); err != nil {
+		log.Println(err)
+	}
 }
 
 func main() {
