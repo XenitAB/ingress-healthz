@@ -3,9 +3,9 @@ entries:
   ingress-healthz:
   - apiVersion: v2
     appVersion: 1.0.3
-    created: "2020-08-24T09:58:31.469080113Z"
+    created: "2020-10-14T19:45:58.503094384Z"
     description: A Helm chart for ingress-healthz to verify that ingress is working
-    digest: 8342da7a8055aa82a64d586cd3e5467663f91bbf190510c41a944ed88eebbc34
+    digest: 9d829a3a271ea277e21a7cccb27761236dcb5b0c8cb17c40884e29df56630cd4
     name: ingress-healthz
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.0.2
-    created: "2020-08-24T09:58:31.468438606Z"
+    created: "2020-10-14T19:45:58.502571483Z"
     description: A Helm chart for ingress-healthz to verify that ingress is working
     digest: 9cfe958674496a6060ade85deada0aa6623f87ce720b680eb56c8326c060b7b6
     name: ingress-healthz
@@ -21,4 +21,4 @@ entries:
     urls:
     - https://XenitAB.github.io/ingress-healthz/ingress-healthz-1.0.2.tgz
     version: 1.0.2
-generated: "2020-08-24T09:58:31.467580397Z"
+generated: "2020-10-14T19:45:58.50150968Z"
